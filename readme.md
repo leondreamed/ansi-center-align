@@ -1,5 +1,4 @@
-
-# ansi-center-align [![NPM version](https://img.shields.io/npm/v/ansi-center-align.svg?style=flat)](https://www.npmjs.com/package/ansi-center-align) [![NPM monthly downloads](https://img.shields.io/npm/dm/ansi-center-align.svg?style=flat)](https://npmjs.org/package/ansi-center-align) [![NPM total downloads](https://img.shields.io/npm/dt/ansi-center-align.svg?style=flat)](https://npmjs.org/package/ansi-center-align) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/ansi-center-align.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/ansi-center-align)
+# ansi-center-align [![NPM version](https://img.shields.io/npm/v/ansi-center-align.svg?style=flat)](https://www.npmjs.com/package/ansi-center-align) [![NPM monthly downloads](https://img.shields.io/npm/dm/ansi-center-align.svg?style=flat)](https://npmjs.org/package/ansi-center-align) [![NPM total downloads](https://img.shields.io/npm/dt/ansi-center-align.svg?style=flat)](https://npmjs.org/package/ansi-center-align)
 
 Center-align the text in a string. Handles ANSI styles.
 
