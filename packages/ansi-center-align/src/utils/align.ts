@@ -62,7 +62,9 @@ export function centerAlign(val: string | string[], width?: number) {
 		!val.includes('\n')
 	) {
 		const padding = Math.floor((width - stringLength(val)) / 2)
-		return ' '.repeat(padding) + val + ' '.repeat(padding)
+		return (
+			' '.repeat(Math.max(0, padding)) + val + ' '.repeat(Math.max(0, padding))
+		)
 	}
 
 	return alignText(val, (len, longest) => {
