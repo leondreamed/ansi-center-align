@@ -55,16 +55,19 @@ function alignText(
 	return res.join('\n')
 }
 
-export function centerAlign(val: string | string[], width?: number) {
+export function centerAlign<T extends string | string[]>(
+	val: T,
+	width?: number
+): T {
 	if (
 		typeof width === 'number' &&
 		typeof val === 'string' &&
 		!val.includes('\n')
 	) {
 		const padding = Math.floor((width - stringLength(val)) / 2)
-		return (
-			' '.repeat(Math.max(0, padding)) + val + ' '.repeat(Math.max(0, padding))
-		)
+		return (' '.repeat(Math.max(0, padding)) +
+			val +
+			' '.repeat(Math.max(0, padding))) as T
 	}
 
 	return alignText(val, (len, longest) => {
@@ -73,5 +76,5 @@ export function centerAlign(val: string | string[], width?: number) {
 		}
 
 		return Math.floor((longest - len) / 2)
-	})
+	}) as T
 }
