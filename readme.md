@@ -15,7 +15,7 @@ npm install --save ansi-center-align
 ## Usage
 
 ```js
-import centerAlign from 'ansi-center-align';
+import { centerAlign } from 'ansi-center-align';
 centerAlign(val, width);
 ```
 
